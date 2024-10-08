@@ -1,0 +1,6 @@
+echo "🛠️ Check for linting erros and run tests before commitlint..."
+
+npm run lint ||
+(echo "Linting errors or tests failed. Please fix them before commitlint" && exit 1)
+
+echo "Done 😃"
